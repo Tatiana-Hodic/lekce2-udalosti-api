@@ -121,3 +121,19 @@ li {
 	color: black;
 	border-color: blue;
 }
+
+.odstavec {
+	font-size: 16px;
+}
+
+.tucny {
+	font-weight: bold;
+}
+
+.cervena {
+	color: red;
+}
+
+.vetsi {
+	font-size: 17px;
+}

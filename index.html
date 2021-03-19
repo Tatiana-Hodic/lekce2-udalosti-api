@@ -8,18 +8,35 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<!--   
 	<h1>Změna tříd, události</h1>
 
-	<div class="ctverecek zluty"></div>
+	<div class="ctverecek zluty" onmouseover="console.log('zluta')"></div>
 
-	<div class="ctverecek zeleny"></div>
+	<div class="ctverecek zeleny" onkeydown="console.log(event)"></div>
 
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
-	<button class="tlacitko">Čudlajs</button>
+	<button class="tlacitko">Čudlajs</button> 
+	-->
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<p class="odstavec" id="vetsi" onmouseover="tucny()">V elipse spí lev.</p>
+
+	<button onclick="cervena()">Červený po kliknutí</button>
+
+	<button onclick="vetsi()">Větší po kliknutí</button>
+
+	<h2>Audio</h2>
+	<audio id="audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+	<button onclick="prehraj('audio')">Play</button>
+	<button onclick="zastav('audio')">Pause</button>
+	<button onclick="min()">Volume min</button>
+	<button onclick="mid()">Volume mid</button>
+	<button onclick="max()">Volume max</button>
+	<button onclick="stop('audio')">Stop</button>
+
+	<script src="main.js"></script>
 
 </body>
 </html>
